@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital-агентство ADN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="./images/icons/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<header class="main-header">
+  <img src="./images/icons/logo.svg" alt="Лого компании ADN" class="main-header__logo"/>
+
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a href="#">Портфолио</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#">Услуги</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#">Компания</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#">Блог</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#">Вакансии</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#">Контакты</a>
+      </li>
+      <li class="navigation__item">
+        <a href="#" class="action-button">Стать клиентом</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="menu-burger" id="menuBurger">
+    <div class="menu-burger__wrapper">
+      <div class="menu-burger__container menu-burger__header">
+        <img src="./images/icons/logo.svg" alt="Лого компании ADN" class="main-header__logo"/>
+        <button class="close-button" id="burgerMenuClose"></button>
+      </div>
+      <nav class="navigation mobile">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#">Портфолио</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Услуги</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Компания</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Блог</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Вакансии</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#">Стать клиентом</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-burger__container menu-burger__footer">
+        <p class="menu-burger__footer-text">2022 ADN. Москва, ул. Ткацкая</p>
+        <a href="#" class="menu-burger__footer-text">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="burger" id="burgerMenuOpen"></button>
+</header>
+<main>
+  <section class="portfolio">
+    <h1 class="portfolio__title">Портфолио</h1>
+
+    <ul class="tabs" id="tabs">
+      <li>
+        <a href="#" class="tabs__item active" data-category="all">Все проекты</a>
+      </li>
+      <li>
+        <a href="#" class="tabs__item" data-category="development">Разработка</a>
+      </li>
+      <li>
+        <a href="#" class="tabs__item" data-category="design">Дизайн</a>
+      </li>
+      <li>
+        <a href="#" class="tabs__item" data-category="branding">Брендинг</a>
+      </li>
+      <li>
+        <a href="#" class="tabs__item" data-category="illustration">Иллюстрации</a>
+      </li>
+    </ul>
+
+    <ul class="cards-list" id="cards-list">
+
+      <li>
+        <div class="cards-list__item">
+          <div class="cards-list__img-block">
+            <a href="#">
+              <img src="./images/portfolio/lnFamily.jpg" alt="LN Family"/>
+            </a>
+            <ul class="cards-list__awards">
+              <li class="cards-list__awards-item">
+                <img src="./images/icons/awards/award1.svg" alt="Award 1" class="cards-list__awards-item-img"/>
+              </li>
+              <li class="cards-list__awards-item">
+                <img src="./images/icons/awards/award2.svg" alt="Award 2" class="cards-list__awards-item-img"/>
+              </li>
+              <li class="cards-list__awards-item">
+                <img src="./images/icons/awards/award3.svg" alt="Award 3" class="cards-list__awards-item-img"/>
+              </li>
+              <li class="cards-list__awards-item">
+                <img src="./images/icons/awards/award4.svg" alt="Award 4" class="cards-list__awards-item-img"/>
+              </li>
+            </ul>
+          </div>
+          <ul class="tag-list">
+            <li>
+              <a href="#" class="tag-list__item">Интернет-магазин</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">Айдентика</a>
+            </li>
+          </ul>
+          <a href="#" class="cards-list__title">
+            Магазин дизайнерской одежды LN Family
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <a href="#" class="cards-list__item">
+          <div class="cards-list__img-block">
+            <a href="#">
+              <img src="./images/portfolio/theater.jpg" alt="Изображение шляпы"/>
+            </a>
+            <ul class="cards-list__awards">
+              <li class="cards-list__awards-item">
+                <img src="./images/icons/awards/award3.svg" alt="Award 3" class="cards-list__awards-item-img"/>
+              </li>
+            </ul>
+          </div>
+          <ul class="tag-list">
+            <li>
+              <a href="#" class="tag-list__item">Сайты</a>
+            </li>
+          </ul>
+          <a href="#" class="cards-list__title">
+            Театр драмы им. Шукшина
+          </a>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="cards-list__item">
+          <div class="cards-list__img-block">
+            <a href="#">
+              <img src="./images/portfolio/playrix.jpg" alt="Zefir Games"/>
+            </a>
+            <ul class="cards-list__awards">
+              <li class="cards-list__awards-item">
+                <img src="./images/icons/awards/award4.svg" alt="Award 4" class="cards-list__awards-item-img"/>
+              </li>
+            </ul>
+          </div>
+          <ul class="tag-list">
+            <li>
+              <a href="#" class="tag-list__item">Интернет-магазин</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">Айдентика</a>
+            </li>
+          </ul>
+          <a href="#" class="cards-list__title">
+            HR-сайт для Zefir Games Playrix
+          </a>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="cards-list__item">
+          <div class="cards-list__img-block">
+            <a href="#">
+              <img src="./images/portfolio/kit-fit.jpg" alt="FIT KIT"/>
+            </a>
+            <ul class="cards-list__awards">
+              <li class="cards-list__awards-item">
+                <img src="./images/icons/awards/award3.svg" alt="Award 3" class="cards-list__awards-item-img"/>
+              </li>
+            </ul>
+          </div>
+          <ul class="tag-list">
+            <li>
+              <a href="#" class="tag-list__item">Интернет-магазин</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">Айдентика</a>
+            </li>
+          </ul>
+          <a href="#" class="cards-list__title">
+            Магазин для бренда FIT KIT
+          </a>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="cards-list__item">
+          <div class="cards-list__img-block">
+            <a href="#">
+              <img src="./images/portfolio/shooting.jpg" alt="Пистолет"/>
+            </a>
+          </div>
+          <ul class="tag-list">
+            <li>
+              <a href="#" class="tag-list__item">Интернет-магазин</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">Айдентика</a>
+            </li>
+          </ul>
+          <a href="#" class="cards-list__title">
+            Балтийский стрелковый центр
+          </a>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="cards-list__item">
+          <div class="cards-list__img-block">
+            <a href="#">
+              <img src="./images/portfolio/theater1.jpg" alt="Кружки"/>
+            </a>
+          </div>
+          <ul class="tag-list">
+            <li>
+              <a href="#" class="tag-list__item">Интернет-магазин</a>
+            </li>
+            <li>
+              <a href="#" class="tag-list__item">Айдентика</a>
+            </li>
+          </ul>
+          <a href="#" class="cards-list__title">
+            Айдентика для театра драмы им. Шукшина
+          </a>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+  <section class="project">
+    <h1 class="project__title">
+      Заявка на проект
+    </h1>
+    <div class="project__description">
+      <p class="project__text">
+        Оставьте заявку или позвоните и мы сами все за вас заполним: <a href="tel:+7495740611">+7 495 740 61 10</a>
+      </p>
+    </div>
+
+    <form action="#" class="project-form" name="projectForm" id="projectForm">
+
+      <fieldset>
+        <legend>Расскажите о себе и проекте</legend>
+        <input class="project-form__text-input" type="text" placeholder="Ваше имя" name="name" value=""/>
+        <input class="project-form__text-input" type="text" placeholder="Ваш телефон" name="phone" value=""/>
+        <input class="project-form__text-input" type="text" placeholder="Электронная почта" name="mail" value=""/>
+        <input class="project-form__text-input" type="text" placeholder="Пару слов о вашей задаче" value="" name="task"/>
+        <div class="project-form__file-loader">
+          <input id="fileLoader" type="file" placeholder="Прикрепить ТЗ" name="file"/>
+
+          <label for="fileLoader"><img src="./images/icons/clip.svg" alt="Скрепка"/> Прикрепить ТЗ</label>
+          <span class="project-form__file-loader-description">Не более 10 МБ</span>
+        </div>
+      </fieldset>
+
+      <fieldset name="budgetFields">
+        <legend>Ваш бюджет, в ₽</legend>
+        <div class="project-form__fieldset-container">
+
+          <input name="budget" type="radio" id="100000" value="100000"/>
+          <label for="100000" class="project-form__label-button">до 100 000</label>
+
+          <input name="budget" type="radio" id="500000" value="500000"/>
+          <label for="500000" class="project-form__label-button">до 500 000</label>
+
+          <input name="budget" type="radio" id="1000000" value="1000000"/>
+          <label for="1000000" class="project-form__label-button">до 1 000 000</label>
+
+          <input name="budget" type="radio" id="1000000+" value="1000000+"/>
+          <label for="1000000+" class="project-form__label-button">> 1 000 000</label>
+
+        </div>
+      </fieldset>
+
+      <fieldset name="aboutUsSet">
+        <legend>Откуда узнали про нас</legend>
+        <div class="project-form__fieldset-container">
+
+          <input name="about-us" type="checkbox" id="advertising" value="advertising"/>
+          <label for="advertising" class="project-form__label-button ">Реклама</label>
+
+          <input name="about-us" type="checkbox" id="media" value="media"/>
+          <label for="media" class="project-form__label-button">СМИ</label>
+
+          <input name="about-us" type="checkbox" id="rating" value="rating"/>
+          <label for="rating" class="project-form__label-button">Рейтинг</label>
+
+          <input name="about-us" type="checkbox" id="socials" value="socials"/>
+          <label for="socials" class="project-form__label-button">Соцсети</label>
+
+          <input name="about-us" type="checkbox" id="recommendations" value="recommendations"/>
+          <label for="recommendations" class="project-form__label-button">Рекомендации</label>
+
+        </div>
+      </fieldset>
+
+      <div class="project-form__wrapper">
+        <button type="submit" class="action-button dark">Отправить заявку</button>
+        <span>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности.</span>
+      </div>
+    </form>
+  </section>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__container">
+    <div class="main-footer__container--contacts">
+      <a class="main-footer__title" href="mailto: test@gmail.com">Написать на email</a>
+      <a href="tel:+73852590630" class="main-footer__phone">+7 385 259 06 30</a>
+    </div>
+    <a href="#" class="action-button dark">Стать клиентом</a>
+  </div>
+  <ul class="navigation__list dark">
+    <li class="navigation__item">
+      <a href="#">Vkontakte</a>
+    </li>
+    <li class="navigation__item">
+      <a href="#">Dribbble</a>
+    </li>
+    <li class="navigation__item">
+      <a href="#">Behance</a>
+    </li>
+  </ul>
+
+  <div class="main-footer__container main-footer__container--copyright">
+    <p class="main-footer__copyright">2022 ADN. Москва, ул. Ткацкая</p>
+    <a href="#" class="main-footer__copyright">Политика конфиденциальности</a>
+  </div>
+
+  <script src="./js/app.min.js"></script>
+</footer>
+</body>
+</html>
